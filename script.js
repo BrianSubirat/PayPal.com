@@ -25,7 +25,13 @@ document.getElementById('noAddressBtn').addEventListener('click', function() {
 
 document.getElementById('yesHomeBtn').addEventListener('click', function() {
     document.getElementById('homeConfirmationStep').classList.add('hidden');
-    document.getElementById('finalConfirmMessage').classList.remove('hidden');
+    document.getElementById('loadingStep').classList.remove('hidden');
+    
+    // Simulate loading for 2 seconds before showing final message
+    setTimeout(() => {
+        document.getElementById('loadingStep').classList.add('hidden');
+        document.getElementById('finalConfirmMessage').classList.remove('hidden');
+    }, 2000);
 });
 
 document.getElementById('noHomeBtn').addEventListener('click', function() {
