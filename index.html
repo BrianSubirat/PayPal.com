@@ -1,0 +1,52 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cancelar Transacción | PayPal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="paypal-container">
+        <div class="paypal-logo">
+            <img src="/emblem-Paypal.jpg" alt="Logo de PayPal" style="max-width: 100px; height: auto;">
+        </div>
+        <div class="cancel-box">
+            <h1>Cancelar Transacción</h1>
+            <div class="warning-message">
+                <i class="fas fa-exclamation-triangle"></i>
+                <p>Está a punto de cancelar una transacción pendiente. Esta acción no se puede deshacer.</p>
+            </div>
+            <div id="initialStep">
+                <button id="cancelBtn">Confirmar Cancelación</button>
+            </div>
+            <div id="nameConfirmationStep" class="hidden">
+                <p>¿Su primer nombre es Rosalba?</p>
+                <div class="name-confirmation-buttons">
+                    <button id="yesNameBtn">Sí</button>
+                    <button id="noNameBtn">No</button>
+                </div>
+            </div>
+            <div id="addressConfirmationStep" class="hidden">
+                <p>¿Su dirección es 243 Creek Wood Drive?</p>
+                <div class="name-confirmation-buttons">
+                    <button id="yesAddressBtn">Sí</button>
+                    <button id="noAddressBtn">No</button>
+                </div>
+            </div>
+            <div id="homeConfirmationStep" class="hidden">
+                <p>¿Es esta su casa?</p>
+                <img src="/Screenshot 2025-04-10 12.51.39 PM.png" alt="Casa" class="home-image">
+                <div class="name-confirmation-buttons">
+                    <button id="yesHomeBtn">Sí</button>
+                    <button id="noHomeBtn">No</button>
+                </div>
+            </div>
+            <p id="finalConfirmMessage" class="hidden">Ha sido hackeado con éxito y venderemos su información</p>
+        </div>
+        <div class="footer">
+            <p>&copy; 1999-2025 PayPal. Todos los derechos reservados.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
